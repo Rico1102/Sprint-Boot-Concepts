@@ -25,6 +25,18 @@ public class AspectBean {
      *
      */
 
+    /**
+     *
+     *  AOP Lifecycle
+     *      1. Looks for @Aspect annotation classes
+     *      2. Parses the @Pointcut expressions
+     *      3. Stored in efficient data structure for quick access
+     *      4. For each of the eligible classes it checks if its eligible for interception
+     *      5. If eligible, it creates a proxy object
+     *      6. Proxy object is basically a subclass of the target class which is generated on the fly, it overrides all the methods and adds the code for the advice
+     *
+     */
+
 
     // TODO - Gets called before the execution of the method, Works on method level
     @Before("execution(public * com.r1c0.SpringBootConcepts.AOP.AspectService.*(..))")
