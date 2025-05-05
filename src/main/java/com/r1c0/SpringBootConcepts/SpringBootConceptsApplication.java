@@ -7,7 +7,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
 @EnableAsync
-@ComponentScan(basePackages = "com.r1c0.SpringBootConcepts.BeanScopes")
+@ComponentScan(basePackages = "com.r1c0.SpringBootConcepts.AOP")
 public class SpringBootConceptsApplication {
 
 	public static void main(String[] args) {
